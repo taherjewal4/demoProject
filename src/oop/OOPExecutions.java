@@ -1,6 +1,10 @@
 package oop;
 
 import oop.encaps.EncapsulationEmployee;
+import oop.poly.CallerClass;
+import oop.poly.CollegeClass;
+import oop.poly.SchoolClass;
+import oop.sigletonExample.SingletonClassName;
 
 public class OOPExecutions {
 
@@ -22,6 +26,17 @@ public class OOPExecutions {
         ee.setFirstName("Amran");
         System.out.println(ee.getFirstName());
 
+
+        SchoolClass sc = new CollegeClass();
+        sc.english();
+
+//        SingletonClassName sec = new SingletonClassName();
+//
+//        sec.printFromSingleton();
+
+        SingletonClassName.getInstence().printFromSingleton();
+        CallerClass cc = new CallerClass();
+        cc.getCs().english();
 
     }
 }
